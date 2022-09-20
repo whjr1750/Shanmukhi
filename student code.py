@@ -35,7 +35,7 @@ def enterRoom():
     your_code = your_code_entry.get()
     your_friends_code = friends_code_entry.get()
     username = username_entry.get()
-    
+    # login_window.destroy() commented this
     
     message_window = Tk()
     message_window.config(bg='#AFC1D6')
@@ -50,7 +50,8 @@ def enterRoom():
     message_entry = Entry(message_window, font = 'arial 15')
     message_entry.place(relx=0.6,rely=0.8, anchor=CENTER)
     
-    btn_send = Button(message_window, text="Send", font = 'arial 13', bg="#D6CA98", fg="black", padx=10, relief=FLAT,command = sendData) #added command
+    # login_window.destroy()
+    btn_send = Button(message_window, text="Send", font = 'arial 13', bg="#D6CA98", fg="black", padx=10, relief=FLAT,command = sendData) #added this code
     btn_send.place(relx=0.5,rely=0.9, anchor=CENTER)
     
     login_window.destroy() 
